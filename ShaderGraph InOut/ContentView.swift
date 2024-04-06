@@ -10,48 +10,35 @@ import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
-
-    @State private var showImmersiveSpace = false
-    @State private var immersiveSpaceIsShown = false
-
-    @Environment(\.openImmersiveSpace) var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+    var viewModel: ViewModel
 
     var body: some View {
+        @Bindable var viewModel = viewModel
+
         VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
-
-            Toggle("Show ImmersiveSpace", isOn: $showImmersiveSpace)
-                .font(.title)
-                .frame(width: 360)
-                .padding(24)
-                .glassBackgroundEffect()
-        }
-        .padding()
-        .onChange(of: showImmersiveSpace) { _, newValue in
-            Task {
-                if newValue {
-                    switch await openImmersiveSpace(id: "ImmersiveSpace") {
-                    case .opened:
-                        immersiveSpaceIsShown = true
-                    case .error, .userCancelled:
-                        fallthrough
-                    @unknown default:
-                        immersiveSpaceIsShown = false
-                        showImmersiveSpace = false
-                    }
-                } else if immersiveSpaceIsShown {
-                    await dismissImmersiveSpace()
-                    immersiveSpaceIsShown = false
+            RealityView { content in
+                if let scene = try? await Entity(named: "Pipeline", in: realityKitContentBundle) {
+                    viewModel.rootEntity = scene
+                    content.add(scene)
+//                    viewModel.updateGray()
+                }
+            } update: { content in
+                // See https://stackoverflow.com/questions/77705497/reality-composer-pro-material-texture-not-shown-when-using-generatetext-in-visi/77705804#77705804
+                // guard let scene = content.entities.first else { return }
+                viewModel.updateGray()
+            }
+            .padding(.bottom, 50)
+            VStack {
+                LabeledContent("Gray") {
+                    Slider(value: $viewModel.gray, in: 0...1)
                 }
             }
+            .padding(.horizontal, 300)
         }
+        .padding()
     }
 }
 
 #Preview(windowStyle: .automatic) {
-    ContentView()
+    ContentView(viewModel: ViewModel())
 }

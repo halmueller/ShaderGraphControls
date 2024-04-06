@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B22F0CE2BC0AD66000C0C97 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B22F0CD2BC0AD66000C0C97 /* ViewModel.swift */; };
 		2B8A8A7D2BB37433009583F2 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 2B8A8A7C2BB37433009583F2 /* RealityKitContent */; };
 		2B8A8A7F2BB37433009583F2 /* ShaderGraph_InOutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A8A7E2BB37433009583F2 /* ShaderGraph_InOutApp.swift */; };
 		2B8A8A812BB37433009583F2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A8A802BB37433009583F2 /* ContentView.swift */; };
-		2B8A8A832BB37433009583F2 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A8A822BB37433009583F2 /* ImmersiveView.swift */; };
 		2B8A8A852BB37434009583F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8A8A842BB37434009583F2 /* Assets.xcassets */; };
 		2B8A8A882BB37434009583F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8A8A872BB37434009583F2 /* Preview Assets.xcassets */; };
 		2B8A8A932BB37434009583F2 /* ShaderGraph_InOutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B8A8A922BB37434009583F2 /* ShaderGraph_InOutTests.swift */; };
@@ -27,11 +27,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B22F0CD2BC0AD66000C0C97 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		2B8A8A772BB37433009583F2 /* ShaderGraph InOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShaderGraph InOut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8A8A7B2BB37433009583F2 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		2B8A8A7E2BB37433009583F2 /* ShaderGraph_InOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderGraph_InOutApp.swift; sourceTree = "<group>"; };
 		2B8A8A802BB37433009583F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2B8A8A822BB37433009583F2 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		2B8A8A842BB37434009583F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B8A8A872BB37434009583F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B8A8A892BB37434009583F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 			children = (
 				2B8A8A7E2BB37433009583F2 /* ShaderGraph_InOutApp.swift */,
 				2B8A8A802BB37433009583F2 /* ContentView.swift */,
-				2B8A8A822BB37433009583F2 /* ImmersiveView.swift */,
+				2B22F0CD2BC0AD66000C0C97 /* ViewModel.swift */,
 				2B8A8A842BB37434009583F2 /* Assets.xcassets */,
 				2B8A8A892BB37434009583F2 /* Info.plist */,
 				2B8A8A862BB37434009583F2 /* Preview Content */,
@@ -218,8 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B8A8A812BB37433009583F2 /* ContentView.swift in Sources */,
+				2B22F0CE2BC0AD66000C0C97 /* ViewModel.swift in Sources */,
 				2B8A8A7F2BB37433009583F2 /* ShaderGraph_InOutApp.swift in Sources */,
-				2B8A8A832BB37433009583F2 /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

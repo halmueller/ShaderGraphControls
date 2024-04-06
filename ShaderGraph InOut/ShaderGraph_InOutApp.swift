@@ -9,13 +9,11 @@ import SwiftUI
 
 @main
 struct ShaderGraph_InOutApp: App {
+    @State private var viewModel = ViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
-
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
+            ContentView(viewModel: viewModel)
         }
     }
 }

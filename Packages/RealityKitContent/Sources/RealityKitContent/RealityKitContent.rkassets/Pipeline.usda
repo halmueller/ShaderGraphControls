@@ -1,0 +1,87 @@
+#usda 1.0
+(
+    defaultPrim = "Root"
+    metersPerUnit = 1
+    upAxis = "Y"
+)
+
+def Xform "Root"
+{
+    reorder nameChildren = ["Cube", "CubeMaterial"]
+    rel material:binding = None (
+        bindMaterialAs = "weakerThanDescendants"
+    )
+
+    def Cube "Cube" (
+        active = true
+        prepend apiSchemas = ["MaterialBindingAPI"]
+        customData = {
+            float3 rotationEulerHint = (0, 1.0471976, 0)
+        }
+    )
+    {
+        reorder nameChildren = ["CubeMaterial", "DefaultMaterial"]
+        rel material:binding = </Root/Cube/CubeMaterial> (
+            bindMaterialAs = "weakerThanDescendants"
+        )
+        double size = 0.2
+        quatf xformOp:orient = (0.8660254, 0, 0.5, 0)
+        float3 xformOp:scale = (1, 1, 1)
+        float3 xformOp:translate = (0, 0.1, 0)
+        uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
+
+        def Material "CubeMaterial" (
+            references = @Pipeline.usda@</Root/Cube/CubeMaterial>
+        )
+        {
+            float inputs:gray = 0 (
+                customData = {
+                    dictionary realitykit = {
+                        float2 positionInSubgraph = (-741.4258, 190.20703)
+                        float2 sizeInSubgraph = (98, 53)
+                        int stackingOrderInSubgraph = 15
+                    }
+                }
+            )
+            prepend token outputs:mtlx:surface.connect = </Root/Cube/CubeMaterial/PreviewSurface.outputs:out>
+            token outputs:realitykit:vertex
+            token outputs:surface.connect = </Root/Cube/CubeMaterial/UsdPreviewSurface.outputs:surface>
+            float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (0, 109.5)
+            float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+            int ui:nodegraph:realitykit:subgraphOutputs:stackingOrder = 15
+
+            def Shader "UsdPreviewSurface" (
+                active = false
+            )
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                token outputs:surface
+            }
+
+            def Shader "PreviewSurface"
+            {
+                uniform token info:id = "ND_UsdPreviewSurface_surfaceshader"
+                color3f inputs:diffuseColor.connect = </Root/Cube/CubeMaterial/Combine3.outputs:out>
+                float inputs:metallic
+                float inputs:roughness
+                token outputs:out
+                float2 ui:nodegraph:node:pos = (-255, 105)
+                float2 ui:nodegraph:node:size = (148.5, 199)
+                int ui:nodegraph:node:stackingOrder = 6
+            }
+
+            def Shader "Combine3"
+            {
+                uniform token info:id = "ND_combine3_color3"
+                float inputs:in1.connect = </Root/Cube/CubeMaterial.inputs:gray>
+                float inputs:in2.connect = None
+                float inputs:in3.connect = None
+                color3f outputs:out
+                float2 ui:nodegraph:node:pos = (-509.84766, 173.14844)
+                float2 ui:nodegraph:node:size = (145, 54)
+                int ui:nodegraph:node:stackingOrder = 14
+            }
+        }
+    }
+}
+
