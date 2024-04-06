@@ -28,14 +28,14 @@
 
 /* Begin PBXFileReference section */
 		2B22F0CD2BC0AD66000C0C97 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		2B8A8A772BB37433009583F2 /* ShaderGraph InOut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShaderGraph InOut.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B8A8A772BB37433009583F2 /* ShaderGraphControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShaderGraphControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8A8A7B2BB37433009583F2 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		2B8A8A7E2BB37433009583F2 /* ShaderGraph_InOutApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderGraph_InOutApp.swift; sourceTree = "<group>"; };
 		2B8A8A802BB37433009583F2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2B8A8A842BB37434009583F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B8A8A872BB37434009583F2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B8A8A892BB37434009583F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B8A8A8E2BB37434009583F2 /* ShaderGraph InOutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShaderGraph InOutTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B8A8A8E2BB37434009583F2 /* ShaderGraphControlsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShaderGraphControlsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B8A8A922BB37434009583F2 /* ShaderGraph_InOutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderGraph_InOutTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,7 +61,7 @@
 		2B8A8A6E2BB37433009583F2 = {
 			isa = PBXGroup;
 			children = (
-				2B8A8A792BB37433009583F2 /* ShaderGraph InOut */,
+				2B8A8A792BB37433009583F2 /* ShaderGraphControls */,
 				2B8A8A7A2BB37433009583F2 /* Packages */,
 				2B8A8A912BB37434009583F2 /* ShaderGraph InOutTests */,
 				2B8A8A782BB37433009583F2 /* Products */,
@@ -71,13 +71,13 @@
 		2B8A8A782BB37433009583F2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B8A8A772BB37433009583F2 /* ShaderGraph InOut.app */,
-				2B8A8A8E2BB37434009583F2 /* ShaderGraph InOutTests.xctest */,
+				2B8A8A772BB37433009583F2 /* ShaderGraphControls.app */,
+				2B8A8A8E2BB37434009583F2 /* ShaderGraphControlsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2B8A8A792BB37433009583F2 /* ShaderGraph InOut */ = {
+		2B8A8A792BB37433009583F2 /* ShaderGraphControls */ = {
 			isa = PBXGroup;
 			children = (
 				2B8A8A7E2BB37433009583F2 /* ShaderGraph_InOutApp.swift */,
@@ -87,7 +87,7 @@
 				2B8A8A892BB37434009583F2 /* Info.plist */,
 				2B8A8A862BB37434009583F2 /* Preview Content */,
 			);
-			path = "ShaderGraph InOut";
+			path = ShaderGraphControls;
 			sourceTree = "<group>";
 		};
 		2B8A8A7A2BB37433009583F2 /* Packages */ = {
@@ -117,9 +117,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B8A8A762BB37433009583F2 /* ShaderGraph InOut */ = {
+		2B8A8A762BB37433009583F2 /* ShaderGraphControls */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B8A8A962BB37434009583F2 /* Build configuration list for PBXNativeTarget "ShaderGraph InOut" */;
+			buildConfigurationList = 2B8A8A962BB37434009583F2 /* Build configuration list for PBXNativeTarget "ShaderGraphControls" */;
 			buildPhases = (
 				2B8A8A732BB37433009583F2 /* Sources */,
 				2B8A8A742BB37433009583F2 /* Frameworks */,
@@ -129,17 +129,17 @@
 			);
 			dependencies = (
 			);
-			name = "ShaderGraph InOut";
+			name = ShaderGraphControls;
 			packageProductDependencies = (
 				2B8A8A7C2BB37433009583F2 /* RealityKitContent */,
 			);
 			productName = "ShaderGraph InOut";
-			productReference = 2B8A8A772BB37433009583F2 /* ShaderGraph InOut.app */;
+			productReference = 2B8A8A772BB37433009583F2 /* ShaderGraphControls.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2B8A8A8D2BB37434009583F2 /* ShaderGraph InOutTests */ = {
+		2B8A8A8D2BB37434009583F2 /* ShaderGraphControlsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B8A8A992BB37434009583F2 /* Build configuration list for PBXNativeTarget "ShaderGraph InOutTests" */;
+			buildConfigurationList = 2B8A8A992BB37434009583F2 /* Build configuration list for PBXNativeTarget "ShaderGraphControlsTests" */;
 			buildPhases = (
 				2B8A8A8A2BB37434009583F2 /* Sources */,
 				2B8A8A8B2BB37434009583F2 /* Frameworks */,
@@ -150,9 +150,9 @@
 			dependencies = (
 				2B8A8A902BB37434009583F2 /* PBXTargetDependency */,
 			);
-			name = "ShaderGraph InOutTests";
+			name = ShaderGraphControlsTests;
 			productName = "ShaderGraph InOutTests";
-			productReference = 2B8A8A8E2BB37434009583F2 /* ShaderGraph InOutTests.xctest */;
+			productReference = 2B8A8A8E2BB37434009583F2 /* ShaderGraphControlsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -174,7 +174,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2B8A8A722BB37433009583F2 /* Build configuration list for PBXProject "ShaderGraph InOut" */;
+			buildConfigurationList = 2B8A8A722BB37433009583F2 /* Build configuration list for PBXProject "ShaderGraphControls" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -187,8 +187,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B8A8A762BB37433009583F2 /* ShaderGraph InOut */,
-				2B8A8A8D2BB37434009583F2 /* ShaderGraph InOutTests */,
+				2B8A8A762BB37433009583F2 /* ShaderGraphControls */,
+				2B8A8A8D2BB37434009583F2 /* ShaderGraphControlsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,7 +236,7 @@
 /* Begin PBXTargetDependency section */
 		2B8A8A902BB37434009583F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2B8A8A762BB37433009583F2 /* ShaderGraph InOut */;
+			target = 2B8A8A762BB37433009583F2 /* ShaderGraphControls */;
 			targetProxy = 2B8A8A8F2BB37434009583F2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -368,7 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ShaderGraph InOut/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ShaderGraphControls/Preview Content\"";
 				DEVELOPMENT_TEAM = TW8SJXYFP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -394,7 +394,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ShaderGraph InOut/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"ShaderGraphControls/Preview Content\"";
 				DEVELOPMENT_TEAM = TW8SJXYFP5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -429,7 +429,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShaderGraph InOut.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShaderGraph InOut";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShaderGraphControls.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShaderGraphControls";
 				XROS_DEPLOYMENT_TARGET = 1.1;
 			};
 			name = Debug;
@@ -450,7 +450,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShaderGraph InOut.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShaderGraph InOut";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShaderGraphControls.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShaderGraphControls";
 				XROS_DEPLOYMENT_TARGET = 1.1;
 			};
 			name = Release;
@@ -458,7 +458,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B8A8A722BB37433009583F2 /* Build configuration list for PBXProject "ShaderGraph InOut" */ = {
+		2B8A8A722BB37433009583F2 /* Build configuration list for PBXProject "ShaderGraphControls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B8A8A942BB37434009583F2 /* Debug */,
@@ -467,7 +467,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B8A8A962BB37434009583F2 /* Build configuration list for PBXNativeTarget "ShaderGraph InOut" */ = {
+		2B8A8A962BB37434009583F2 /* Build configuration list for PBXNativeTarget "ShaderGraphControls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B8A8A972BB37434009583F2 /* Debug */,
@@ -476,7 +476,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B8A8A992BB37434009583F2 /* Build configuration list for PBXNativeTarget "ShaderGraph InOutTests" */ = {
+		2B8A8A992BB37434009583F2 /* Build configuration list for PBXNativeTarget "ShaderGraphControlsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B8A8A9A2BB37434009583F2 /* Debug */,
