@@ -1,14 +1,14 @@
 //
-//  ShaderGraph_InOutTests.swift
-//  ShaderGraph InOutTests
+//  ShaderGraphControlsTests.swift
+//  ShaderGraphControlsTests
 //
 //  Created by Hal Mueller on 3/26/24.
 //
 
 import XCTest
-@testable import ShaderGraph_InOut
+@testable import ShaderGraphControls
 
-class ShaderGraph_InOutTests: XCTestCase {
+class ShaderGraphControlsTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

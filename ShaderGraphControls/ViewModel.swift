@@ -1,6 +1,6 @@
 //
 //  ViewModel.swift
-//  ShaderGraph InOut
+//  ShaderGraphControls
 //
 //  Created by Hal Mueller on 4/5/24.
 //

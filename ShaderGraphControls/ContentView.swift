@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  ShaderGraph InOut
+//  ShaderGraphControls
 //
 //  Created by Hal Mueller on 3/26/24.
 //
