@@ -63,7 +63,7 @@
 			children = (
 				2B8A8A792BB37433009583F2 /* ShaderGraphControls */,
 				2B8A8A7A2BB37433009583F2 /* Packages */,
-				2B8A8A912BB37434009583F2 /* ShaderGraph InOutTests */,
+				2B8A8A912BB37434009583F2 /* ShaderGraphControlsTests */,
 				2B8A8A782BB37433009583F2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,12 +106,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2B8A8A912BB37434009583F2 /* ShaderGraph InOutTests */ = {
+		2B8A8A912BB37434009583F2 /* ShaderGraphControlsTests */ = {
 			isa = PBXGroup;
 			children = (
 				2B8A8A922BB37434009583F2 /* ShaderGraphControlsTests.swift */,
 			);
-			path = "ShaderGraph InOutTests";
+			path = ShaderGraphControlsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
