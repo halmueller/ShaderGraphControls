@@ -10,3 +10,6 @@ See:
  - [SO: Controlling parameters in MaterialX](https://stackoverflow.com/a/77705804/719690)
  - [SO: create parameter in Shader Graph](https://stackoverflow.com/a/77844222/719690)
  - [Apple Shader Graph documentation](https://developer.apple.com/documentation/shadergraph)
+
+![Screenshot](screenshot.png)
+
