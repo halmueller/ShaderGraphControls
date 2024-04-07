@@ -34,12 +34,27 @@ def Xform "Root"
             references = @Pipeline.usda@</Root/Cube/CubeMaterial>
         )
         {
-            float inputs:gray = 0 (
+            float inputs:blue = 0 (
+                customData = {
+                    dictionary realitykit = {
+                        float2 positionInSubgraph = (-761.06445, -20.19336)
+                        float2 sizeInSubgraph = (98, 53)
+                    }
+                }
+            )
+            float inputs:green = 0 (
+                customData = {
+                    dictionary realitykit = {
+                        float2 positionInSubgraph = (-713.0293, 112.75195)
+                        float2 sizeInSubgraph = (104, 53)
+                    }
+                }
+            )
+            float inputs:red = 0 (
                 customData = {
                     dictionary realitykit = {
                         float2 positionInSubgraph = (-741.4258, 190.20703)
                         float2 sizeInSubgraph = (98, 53)
-                        int stackingOrderInSubgraph = 15
                     }
                 }
             )
@@ -73,9 +88,9 @@ def Xform "Root"
             def Shader "Combine3"
             {
                 uniform token info:id = "ND_combine3_color3"
-                float inputs:in1.connect = </Root/Cube/CubeMaterial.inputs:gray>
-                float inputs:in2.connect = None
-                float inputs:in3.connect = None
+                float inputs:in1.connect = </Root/Cube/CubeMaterial.inputs:red>
+                float inputs:in2.connect = </Root/Cube/CubeMaterial.inputs:green>
+                float inputs:in3.connect = </Root/Cube/CubeMaterial.inputs:blue>
                 color3f outputs:out
                 float2 ui:nodegraph:node:pos = (-509.84766, 173.14844)
                 float2 ui:nodegraph:node:size = (145, 54)

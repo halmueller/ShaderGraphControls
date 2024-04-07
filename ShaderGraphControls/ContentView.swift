@@ -20,17 +20,20 @@ struct ContentView: View {
                 if let scene = try? await Entity(named: "Pipeline", in: realityKitContentBundle) {
                     viewModel.rootEntity = scene
                     content.add(scene)
-//                    viewModel.updateGray()
                 }
             } update: { content in
-                // See https://stackoverflow.com/questions/77705497/reality-composer-pro-material-texture-not-shown-when-using-generatetext-in-visi/77705804#77705804
-                // guard let scene = content.entities.first else { return }
-                viewModel.updateGray()
+                viewModel.updateParameters()
             }
             .padding(.bottom, 50)
             VStack {
-                LabeledContent("Gray") {
-                    Slider(value: $viewModel.gray, in: 0...1)
+                LabeledContent("Red") {
+                    Slider(value: $viewModel.red, in: 0...1)
+                }
+                LabeledContent("Green") {
+                    Slider(value: $viewModel.green, in: 0...1)
+                }
+                LabeledContent("Blue") {
+                    Slider(value: $viewModel.blue, in: 0...1)
                 }
             }
             .padding(.horizontal, 300)
