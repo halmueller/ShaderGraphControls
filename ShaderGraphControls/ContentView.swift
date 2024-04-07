@@ -17,6 +17,7 @@ struct ContentView: View {
 
         VStack {
             RealityView { content in
+                // Could move this string to the View Model, maybe even the Entity loading too.
                 if let scene = try? await Entity(named: "Pipeline", in: realityKitContentBundle) {
                     viewModel.rootEntity = scene
                     content.add(scene)

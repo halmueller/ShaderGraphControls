@@ -18,7 +18,6 @@ final class ViewModel {
             update(parameter: "red", newValue: red)
         }
     }
-    
     var green: Float = 1.0 {
         didSet {
             update(parameter: "green", newValue: green)
@@ -38,9 +37,9 @@ final class ViewModel {
     }
     
     func update(parameter: String, newValue: Float) {
-        guard let cube = rootEntity?.findEntity(named: "Cube") else { return }
-        guard var modelComponent = cube.components[ModelComponent.self] else { return }
-        guard var shaderGraphMaterial = modelComponent.materials.first
+        guard let cube = rootEntity?.findEntity(named: "Cube"),
+              var modelComponent = cube.components[ModelComponent.self],
+              var shaderGraphMaterial = modelComponent.materials.first
                 as? ShaderGraphMaterial else { return }
         
         do {
