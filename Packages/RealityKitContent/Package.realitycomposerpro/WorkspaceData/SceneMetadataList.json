@@ -11,10 +11,20 @@
       }
     ]
   },
-  "6A8485E5-FBC2-4C08-8F7F-883CA62492EB" : {
+  "1B92B444-9387-433B-BFFE-C13D12C04879" : {
     "objectMetadataList" : [
       [
-        "6A8485E5-FBC2-4C08-8F7F-883CA62492EB",
+        "1B92B444-9387-433B-BFFE-C13D12C04879",
+        "Root",
+        "Cube",
+        "CubeMaterial"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "1B92B444-9387-433B-BFFE-C13D12C04879",
         "Root"
       ],
       {
@@ -22,19 +32,9 @@
         "isLocked" : false
       },
       [
-        "6A8485E5-FBC2-4C08-8F7F-883CA62492EB",
+        "1B92B444-9387-433B-BFFE-C13D12C04879",
         "Root",
         "Cube"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "6A8485E5-FBC2-4C08-8F7F-883CA62492EB",
-        "Root",
-        "Cube",
-        "CubeMaterial"
       ],
       {
         "isExpanded" : true,
@@ -70,6 +70,15 @@
     "objectMetadataList" : [
       [
         "AF09ED6F-1707-48FD-8720-65B998362C09",
+        "Root",
+        "Sphere_Right"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AF09ED6F-1707-48FD-8720-65B998362C09",
         "Root"
       ],
       {
@@ -80,15 +89,6 @@
         "AF09ED6F-1707-48FD-8720-65B998362C09",
         "Root",
         "Sphere_Left"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "AF09ED6F-1707-48FD-8720-65B998362C09",
-        "Root",
-        "Sphere_Right"
       ],
       {
         "isExpanded" : true,
@@ -126,9 +126,7 @@
     "objectMetadataList" : [
       [
         "D66134B1-3681-4A8E-AFE5-29F257229F3B",
-        "Root",
-        "GridMaterial",
-        "GridMaterial"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -136,7 +134,9 @@
       },
       [
         "D66134B1-3681-4A8E-AFE5-29F257229F3B",
-        "Root"
+        "Root",
+        "GridMaterial",
+        "GridMaterial"
       ],
       {
         "isExpanded" : true,
